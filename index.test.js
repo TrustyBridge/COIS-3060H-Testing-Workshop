@@ -135,7 +135,7 @@ describe('Generate button — success message (Issue #2)', () => {
     check('dessert-brownie');
     click('generate-btn');
     const msg = getMessage();
-    const items('brownie','pizza','bread')
+    const items = ('brownie','pizza','bread')
     // BUG: this checks the exact full string, but the app displays items
     // in a random order every time. So this test is flaky — it passes
     // sometimes and fails other times with no code changes.
